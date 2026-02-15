@@ -2,13 +2,13 @@
 name = "basic-academic-letter"
 version = "0.1.0"
 entrypoint = "lib.typ"
-authors = ["Weihao Liaow <@whliao5am>"]
+authors = ["Wenhao Liao <https://whliao.me>"]
 license = "MIT"
 description = "A clean template for academic letter"
 repository = "https://github.com/whliao5am/basic-letter-typst-template"
 keywords = ["letter", "non-fiction", "basic"]
 categories = ["office"]
-exclude = ["template/main.pdf"]
+exclude = ["template/main.pdf", "examples/"]
 
 [template]
 path = "template"
