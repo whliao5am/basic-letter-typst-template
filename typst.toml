@@ -1,6 +1,6 @@
 [package]
 name = "basic-academic-letter"
-version = "0.1.0"
+version = "0.2.0"
 entrypoint = "lib.typ"
 authors = ["Wenhao Liao <https://whliao.me>"]
 license = "MIT"
@@ -8,7 +8,7 @@ description = "A clean template for academic letter"
 repository = "https://github.com/whliao5am/basic-letter-typst-template"
 keywords = ["letter", "non-fiction", "basic"]
 categories = ["office"]
-exclude = ["template/main.pdf", "examples/"]
+exclude = ["template/main.pdf", "examples/", ".github/"]
 
 [template]
 path = "template"

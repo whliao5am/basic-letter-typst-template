@@ -1,4 +1,4 @@
-#import "@preview/basic-academic-letter:0.1.0": basic-academic-letter
+#import "@preview/basic-academic-letter:0.2.0": basic-academic-letter
 
 #show: basic-academic-letter.with(
   main-color: rgb("#641C78"),

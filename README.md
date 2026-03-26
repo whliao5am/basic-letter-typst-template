@@ -92,17 +92,17 @@ I am pleased to recommend [Student Name] for admission to your graduate program.
 |-----------|------|-------------|
 | `logo-img` | image | Institution logo |
 | `signature-img` | image | Personal signature |
-| `school` | content | School/department name |
-| `university` | content | University name |
-| `site` | content | Address |
-| `phone` | content | Phone number |
-| `website` | content | Website URL |
+| `school` | content or none | School/department name, or `none` to hide it |
+| `university` | content or none | University name, or `none` to hide it |
+| `site` | content or none | Address, or `none` to hide it |
+| `phone` | content or none | Phone number, or `none` to hide it |
+| `website` | content or none | Website URL, or `none` to hide it |
 | `per-name` | str | Your name |
-| `per-homepage` | str | Your homepage URL |
-| `per-title` | str | Your title |
-| `per-school` | str | Your school |
-| `per-university` | str | Your university |
-| `per-email` | str | Your email |
+| `per-homepage` | str or none | Your homepage URL, or `none` to show plain text name |
+| `per-title` | str or none | Your title, or `none` to hide it |
+| `per-school` | str or none | Your school, or `none` to hide it |
+| `per-university` | str or none | Your university, or `none` to hide it |
+| `per-email` | str or none | Your email, or `none` to hide it |
 
 ### Optional Parameters
 
