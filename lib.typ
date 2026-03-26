@@ -49,11 +49,11 @@
 
     // Right column - info
     [
-      #text(weight: "bold", fill: main-color, school) \
-      #text(weight: "bold", fill: main-color, university) \
-      #site \
-      #text(weight: "bold", fill: main-color)[Tel]: #phone\
-      #text(weight: "bold", fill: main-color)[Url]: #website
+      #if school     != none [ #text(weight: "bold", fill: main-color, school) \ ]
+      #if university != none [ #text(weight: "bold", fill: main-color, university) \ ]
+      #if site       != none [ #site \ ]
+      #if phone      != none [ #text(weight: "bold", fill: main-color)[Tel]: #phone\ ]
+      #if website    != none [ #text(weight: "bold", fill: main-color)[Url]: #website ]
     ]
   )
   v(header-bottom-margin)
@@ -74,10 +74,14 @@
   v(signature-bottom-margin)
 
   [
-    #link(per-homepage)[#per-name] \
-    #per-title \
-    #per-school, \
-    #per-university \
-    #link("mailto:" + per-email)[#per-email]
+    #if per-homepage   != none [
+        #link(per-homepage)[#per-name] \
+    ] else [
+        #per-name \
+    ]
+    #if per-title      != none [ #per-title \ ]
+    #if per-school     != none [ #per-school, \ ]
+    #if per-university != none [ #per-university \ ]
+    #if per-email      != none [ #link("mailto:" + per-email)[#per-email] ]
   ]
 }
